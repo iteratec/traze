@@ -12,5 +12,6 @@ The traze project consists of multiple components:
 
 [traze-gamserver](https://github.com/iteratec/traze-gameserver) implements the gamelogic in haskell and publishes the game state to the broker.
 
+[traze-web-grid](https://github.com/iteratec/traze-web-grid) renders the game state as a grid with players on a canvas
 
 
