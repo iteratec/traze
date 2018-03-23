@@ -8,6 +8,9 @@ You can join a hosted instance at [traze.iteratec.de](https://traze.iteratec.de)
 TODO: add docker-compose.yml
 
 # Components
-The Traze project consists of multiple components:
-TODO: list the official comoponents
+The traze project consists of multiple components:
+
+[traze-gamserver](https://github.com/iteratec/traze-gameserver) implements the gamelogic in haskell and publishes the game state to the broker.
+
+
 
