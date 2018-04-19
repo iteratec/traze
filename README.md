@@ -14,4 +14,6 @@ The traze project consists of multiple components:
 
 [traze-web-grid](https://github.com/iteratec/traze-web-grid) renders the game state as a grid with players on a canvas
 
+[traze-client-python](https://github.com/iteratec/traze-client-python) a client based on Python 3.6. 
 
+[traze-client-java](https://github.com/iteratec/traze-client-java) a client based on Java. 
