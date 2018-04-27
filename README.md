@@ -1,19 +1,37 @@
 # Traze
-Traze is a simple tron-like multi client online game serving as a playground for exploring new technologies.
+Traze is a multi client online tronlike game with MQTT protocol. It aims to provide a playground for various game clients, AI game bots, and showcase of a resonable secure MQTT application, and it’s fun! You can write your own game client and participate in the game using the specified protocol.
 
 ## Hosted by iteratec
 You can join a hosted instance at [traze.iteratec.de](https://traze.iteratec.de).
 
-## Host yourself
-TODO: add docker-compose.yml
+## Protocol
+The game protocol facilitates multiple MQTT topics with JSON payload. An extensive documentation of the protocol details is provided on [traze.iteratec.de](https://traze.iteratec.de).
 
-# Components
-The traze project consists of multiple components:
+## Components
+The traze project consists of multiple components. Each component has their own repository and lifecycle.
 
-[traze-gamserver](https://github.com/iteratec/traze-gameserver) implements the gamelogic in haskell and publishes the game state to the broker.
+### Core
 
-[traze-web-grid](https://github.com/iteratec/traze-web-grid) renders the game state as a grid with players on a canvas
+These are the core components of the traze game
 
-[traze-client-python](https://github.com/iteratec/traze-client-python) a client based on Python 3.6. 
+[traze-gamserver](https://github.com/iteratec/traze-gameserver) haskell game server implementation for the traze protocol.
 
-[traze-client-java](https://github.com/iteratec/traze-client-java) a client based on Java. 
+[traze-web-grid](https://github.com/iteratec/traze-web-grid) web view that renders the game state as a grid with players on a canvas
+
+### Client Libraries
+
+These are some client libraries that can be used to interact with the traze game server.
+
+[traze-client-python](https://github.com/iteratec/traze-client-python) a client library based on Python 3.6.
+
+[traze-goclient](https://github.com/iteratec/traze-client-go) a client library for golang
+
+### Human Interface Clients
+
+Game clients for human players
+
+[traze-client-java](https://github.com/iteratec/traze-client-java) a client based on Java.
+
+### Bot Implementations
+
+[traze-golang-bot](https://github.com/iteratec/traze-golang-bot) a traze bot written in go.
