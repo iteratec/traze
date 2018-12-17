@@ -32,6 +32,8 @@ Game clients for human players
 
 [traze-client-java](https://github.com/iteratec/traze-client-java) a client based on Java.
 
+[traze-javascript-vanilla](https://github.com/iteratec/traze-javascript-vanilla) a client based on (vanilla) ES6 JavaScript which is both for steering a player and rendering the grid ([demo](https://iteratec.github.io/traze-javascript-vanilla/))
+
 ### Bot Implementations
 
 [traze-golang-bot](https://github.com/iteratec/traze-golang-bot) a traze bot written in go.
