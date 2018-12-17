@@ -8,7 +8,7 @@ You can join a hosted instance at [traze.iteratec.de](https://traze.iteratec.de)
 The game protocol facilitates multiple MQTT topics with JSON payload. An extensive documentation of the protocol details is provided on [traze.iteratec.de](https://traze.iteratec.de).
 
 ## Components
-The traze project consists of multiple components. Each component has their own repository and lifecycle.
+The traze project consists of multiple components. Each component has their own repository and lifecycle. You can find all traze related code under the [traze topic](https://github.com/topics/traze) on github. Some important examples are:
 
 ### Core
 
