@@ -1,5 +1,5 @@
 # Traze
-Traze is a multi client online tronlike game with MQTT protocol. It aims to provide a playground for various game clients, AI game bots, and showcase of a resonable secure MQTT application, and it’s fun! You can write your own game client and participate in the game using the specified protocol.
+Traze is a multi client online tronlike game with MQTT based protocol. It aims to provide a playground for various game clients, AI game bots, and showcase of a resonable secure MQTT application, and it’s fun! You can write your own game client and participate in the game using the specified protocol.
 
 ## Hosted by iteratec
 You can join a hosted instance at [traze.iteratec.de](https://traze.iteratec.de).
@@ -13,6 +13,8 @@ The traze project consists of multiple components. Each component has their own 
 ### Core
 
 These are the core components of the traze game
+
+[traze-docs](https://github.com/iteratec/traze-docs) web documentation of the traze protocol.
 
 [traze-gamserver](https://github.com/iteratec/traze-gameserver) haskell game server implementation for the traze protocol.
 
