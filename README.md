@@ -23,6 +23,11 @@ This will start a local gameserver, mqtt broker, webui, as well as a couple of b
 
 You can watch the local game in your browser at http://localhost:80
 
+Bots can be scaled using docker-compose.
+```
+sudo docker-compose scale random-bot=5
+```
+
 ## Protocol
 The game protocol facilitates multiple MQTT topics with JSON payload. An extensive documentation of the protocol details is provided on [traze.iteratec.de](https://traze.iteratec.de).
 
