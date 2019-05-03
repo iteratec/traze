@@ -1,0 +1,41 @@
+version: '2'
+services:
+  broker:
+    image: eclipse-mosquitto
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mqtt/config:/mosquitto/config:ro
+
+  gameserver:
+    image: iteratec/traze-gameserver
+    environment:
+      - TRAZE_BROKER_HOST=broker
+      - TRAZE_BROKER_USER=trazeGameserver
+      - TRAZE_BROKER_PASSWORD=uGh7ASu6paezaeveiY8i
+
+  web:
+    image: iteratec/traze-web-grid
+    ports:
+      - "80:80"
+    environment:
+      - APP_CONFIG='{"brokerUrl":"http://172.17.0.1:9001", "instanceName":"1"}'
+  docs:
+    image: iteratec/traze-docs:latest
+    ports:
+      - "8080:80"
+
+  bot1:
+    image: iteratec/traze-golang-bot:latest
+    environment:
+      - MQTT_BROKER_ADDRESS=tcp://broker:1883
+      - GAME_INSTANCE=1
+      - NICK_NAME=bot1
+
+  bot3:
+    image: iteratec/traze-golang-bot:latest
+    environment:
+      - MQTT_BROKER_ADDRESS=tcp://broker:1883
+      - GAME_INSTANCE=1
+      - NICK_NAME=bot3

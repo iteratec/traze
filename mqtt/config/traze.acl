@@ -1,0 +1,23 @@
+
+topic read traze/games
+topic read traze/+/grid
+topic read traze/+/players
+topic read traze/+/ticker
+pattern read traze/+/player/%c
+
+topic write traze/+/join
+topic write traze/+/+/steer
+topic write traze/+/+/bail
+
+user trazeGameserver
+
+topic read traze/+/join
+topic read traze/+/+/steer
+topic read traze/+/+/bail
+
+topic write traze/games
+topic write traze/+/grid
+topic write traze/+/players
+topic write traze/+/ticker
+topic write traze/+/player/+
+

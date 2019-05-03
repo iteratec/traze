@@ -4,6 +4,25 @@ Traze is a multi client online tronlike game with MQTT based protocol. It aims t
 ## Hosted by iteratec
 You can join a hosted instance at [traze.iteratec.de](https://traze.iteratec.de).
 
+## Run a Game locally
+You can start a local game using the docker-compose stack provided in this repository.
+```
+git clone https://github.com/iteratec/traze.git
+cd traze
+sudo docker-compose up
+```
+
+This will start a local gameserver, mqtt broker, webui, as well as a couple of bots, binding the following local host ports:
+
+| Service        | Port |
+| -------------- | ---- |
+| webgrid        | 80   |
+| documentation  | 8080 |
+| mqtt broker    | 1883 |
+| mqtt websocket | 9001 |
+
+You can watch the local game in your browser at http://localhost:80
+
 ## Protocol
 The game protocol facilitates multiple MQTT topics with JSON payload. An extensive documentation of the protocol details is provided on [traze.iteratec.de](https://traze.iteratec.de).
 
