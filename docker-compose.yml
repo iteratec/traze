@@ -20,7 +20,7 @@ services:
     ports:
       - "80:80"
     environment:
-      - APP_CONFIG='{"brokerUrl":"http://172.17.0.1:9001", "instanceName":"1"}'
+      - APP_CONFIG='{"brokerUrl":"http://localhost:9001", "instanceName":"1"}'
   docs:
     image: iteratec/traze-docs:latest
     ports:
